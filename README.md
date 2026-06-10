@@ -17,14 +17,14 @@ This repository contains an End-to-End (E2E) automation suite focused on testing
 
 ## Required browsers
 
-- Google Chrome  
-- Mozilla Firefox  
-- Microsoft Edge  
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Edge
 
 ## Installation
 
 ```bash
-git clone https://github.com/OtrAle/epam-specialization-module-05-cypress
+git clone https://github.com/OtrAle/practice-software-testing-cypress
 npm install
 ```
 
@@ -32,28 +32,27 @@ npm install
 
 Run from the project root directory:
 
-| Command | Description |
-|---------|-------------|
-| `npm run cy:open` | Opens the Cypress Test Runner (interactive mode). |
-| `npm run cy:run` | Runs all tests headlessly. |
-| `npm run cy:headed` | Runs all tests in headed mode (browser visible). |
-| `npm run cy:chrome` | Runs all tests in Google Chrome. |
-| `npm run cy:firefox` | Runs all tests in Mozilla Firefox. |
-| `npm run cy:edge` | Runs all tests in Microsoft Edge. |
+| Command              | Description                                       |
+| -------------------- | ------------------------------------------------- |
+| `npm run cy:open`    | Opens the Cypress Test Runner (interactive mode). |
+| `npm run cy:run`     | Runs all tests headlessly.                        |
+| `npm run cy:headed`  | Runs all tests in headed mode (browser visible).  |
+| `npm run cy:chrome`  | Runs all tests in Google Chrome.                  |
+| `npm run cy:firefox` | Runs all tests in Mozilla Firefox.                |
+| `npm run cy:edge`    | Runs all tests in Microsoft Edge.                 |
 
 ## Project Structure
 
-| Path | Purpose |
-|------|---------|
-| `cypress/fixtures/test-data.js` | Centralized test data. |
-| `cypress/e2e/catalog/` | Test specs organized by feature. |
-| `cypress/page-objects/` | Page Objects for selectors and browse products related actions. |
-| `cypress.config.js` | Cypress configuration file. |
-| `package.json` | Dependencies and npm scripts. |
-| `cypress/reports/` | Created when running tests, contains HTML report and JSON files. |
+| Path                            | Purpose                                                          |
+| ------------------------------- | ---------------------------------------------------------------- |
+| `cypress/fixtures/test-data.js` | Centralized test data.                                           |
+| `cypress/e2e/catalog/`          | Test specs organized by feature.                                 |
+| `cypress/page-objects/`         | Page Objects for selectors and browse products related actions.  |
+| `cypress.config.js`             | Cypress configuration file.                                      |
+| `package.json`                  | Dependencies and npm scripts.                                    |
+| `cypress/reports/`              | Created when running tests, contains HTML report and JSON files. |
 
-
-##  Test Scenarios Covered
+## Test Scenarios Covered
 
 - ✅ UC-1 GRID: Displaying the product grid shows product name, price, image, and CO₂ rating for each product.
 - ✅ UC-2 SORT: Selecting a sort option reorders the product grid according to the selected criteria.
@@ -65,6 +64,6 @@ Run from the project root directory:
 - ✅ UC-14 PAGINATION: Pagination arrow buttons are disabled when the first or last page is reached.
 - ✅ UC-15 CATEGORIES: Navigating to a category from the navbar updates both the sidebar filters and the product grid.
 
-## Author 
+## Author
 
 Laura Alejandra Hernández Martínez
